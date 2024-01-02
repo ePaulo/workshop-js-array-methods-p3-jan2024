@@ -1,0 +1,46 @@
+Workshop: Array Methods - Part 2
+
+Array Methods for Getting Elements
+  1) GET the last item in an array
+    a) Mutating methods
+      pop()
+      splice()
+    b) Non-mutating methods
+      [] notation
+      at()
+      slice()
+      toSpliced()
+
+  2) GET the smallest item in an array
+    a) Mutating methods
+      sort().shift()
+    b) Non-mutating methods
+      toSorted()[0]
+      toSorted().at(0)
+      toSorted().slice(0, 1)
+
+  3) GET an item at a specified index
+    a) Mutating methods
+      splice()
+    b) Non-mutating methods
+      [] notation
+      at()
+      slice()
+
+  4) GET items between specified indexes
+    a) Mutating methods
+      splice()
+    b) Non-mutating methods
+      slice()
+
+  5) GET the first item that passes a specified test
+    a) Mutating methods
+      findIndex() + splice()
+    b) Non-mutating methods
+      find()
+
+  6) GET all items that pass a specified test
+    a) Mutating methods
+      sort().findIndex() + splice()
+    b) Non-mutating methods
+      filter()

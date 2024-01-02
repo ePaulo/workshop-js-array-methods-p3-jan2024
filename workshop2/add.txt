@@ -1,0 +1,39 @@
+Workshop: Array Methods - Part 2
+
+Array Methods for Adding Elements
+  1) ADD item(s) at start of array
+    a) Mutating methods
+      unshift()
+      splice()
+
+    b) Non-mutating methods
+      concat()
+      spread operator
+      toSpliced()
+      
+
+  2) ADD item(s) to end of array
+    a) Mutating methods
+      push()
+      splice()
+      
+    b) Non-mutating methods
+      concat()
+      spread operator
+
+
+  3) ADD item(s) into middle of array
+    a) Mutating methods
+      splice()
+
+    b) Non-mutating methods
+      toSpliced()
+
+
+  4) ADD items from one array to another array
+    a) Mutating methods
+      push()
+      
+    b) Non-mutating methods
+      concat()
+      spread operator

@@ -1,0 +1,77 @@
+Workshop: Array Methods - Part 3
+NOTE: This list only includes ~25 of the current 43 JS Array Methods.
+
+We can group Array methods based on:
+1) Methods that can/will mutate the original array.
+2) Methods that reference the original array and either:
+  a) create/return a new "modified" array, or
+  b) check/evalute original items and return a single value.
+3) Methods that loop thru an array, process each item, and return nothing. 
+
+
+1) Methods designed to *MUTATE/CHANGE* the original array:
+  push(item1, item2, ...) --> add item(s) to end of array
+    ... returns length
+  unshift(item1, item2, ...) --> add item(s) to start of array
+    ... returns length
+  pop() --> no parameter, removes last item
+    ... returns removed item
+  shift() --> no parameter, removes first item
+    ... returns removed item
+  reverse() --> no parameter, reverses order "in place"
+    ... returns same
+  sort(compareFcn) --> sorts "in place"
+    ... returns the reference to the same array
+    >>> note: default sort is based on converting items to strings
+  splice(startIndex, delCount, item1, item2...) --> removes/replaces/adds
+    ... returns array of removed items
+
+
+2a) Methods that REFERENCE the original array to create/return a new array:
+  filter((item, index) => testFcn(item)) --> pass/fail test on each item
+    ... returns new array of items passing the "test"
+  slice(startIndex, endIndex) --> items from start to but not including end
+    ... returns new array of selected items
+  map((item, index) => change(item)) --> item (usually) changed by function
+    ... returns new array with all items (changed or not)
+  toReversed() --> places items into a new array in reverse order
+    ... returns new array of items in reverse order
+  toSorted(compareFcn) --> using compareFcn, sorts items into a new array
+    ... returns new array of sorted items
+  toSpliced(startIndex, deleteCount, item1, item2,...) --> 
+    ... returns new array of removed items
+  concat(value1, value2, ...) --> 
+    ... returns copy of original array with new values added at the end 
+  with(index, value) --> with specified index, replace item with "value"
+    ... returns a copy of original array with the specified item change
+
+  spread operator (...) --> use to spread items into a new array
+
+
+2b) Methods/property that EVALUATE the original array and return a value:
+  length --> data property that returns the number of items in the array
+  at(index) --> returns a copy of the item at the specified index
+  some(item => testFcn(item)) --> returns true if ONE item passes test
+  every(item => testFcn(item)) --> returns true if ALL items pass test
+  find(item => testFcn(item)) --> returns copy of first item passing test
+  findIndex(item => testFcn(item)) --> returns index first item passing test
+  indexOf(item) --> returns index of first instance of specified item
+  includes(item) --> returns true if array includes specified item
+  isArray(arr) --> true if parameter is an array with length > 0
+  join(separator) --> returns a string of items joined with the separator
+
+  reduce(
+    (acc, curValue) => acc + curValue, 
+    initValue
+  ) --> calculates accumulated value of items, starting from an initial value
+
+
+3) Methods that loop through an array and return nothing:
+  forEach(item => processFcn(item)) --> executes a function on each item
+    >>> NOTE: within asynchronous functions, use the for..of loop
+
+
+References:
+MDN Web Docs @ https://developer.mozilla.org/
+W3 Schools @ https://www.w3schools.com/
+Learn JavaScript Online [subscription] @ https://learnjavascript.online/

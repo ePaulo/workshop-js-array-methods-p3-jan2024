@@ -1,0 +1,45 @@
+Workshop: Array Methods - Part 2
+
+Array Methods for Editing Elements
+  1) EDIT the item at a specified index
+    a) Mutating methods
+      [] notation
+      splice()
+
+    b) Non-mutating methods
+      with()
+      toSpliced()
+      
+
+  2) EDIT the first item that has a specified value
+    a) Mutating methods
+      indexOf() + [] notation
+      indexOf() + splice()
+      
+    b) Non-mutating methods
+      indexOf() + with()
+      indexOf() + toSpliced()
+
+
+  3) EDIT items between specified indexes
+    a) Mutating methods
+      splice()
+
+    b) Non-mutating methods
+      toSpliced()
+
+
+  4) EDIT some items based on their value
+    a) Mutating methods
+      forEach()
+
+    b) Non-mutating methods
+      map()
+
+
+  5) EDIT all items
+    a) Mutating methods
+      forEach()
+
+    b) Non-mutating methods
+      map()
